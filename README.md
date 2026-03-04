@@ -117,5 +117,5 @@ This project is for educational purposes only
 
 ## 👤 Author
 
-**MALADJI**  
+**MALADJI Thabiso**  
 GitHub: [@MALADJI](https://github.com/MALADJI)
