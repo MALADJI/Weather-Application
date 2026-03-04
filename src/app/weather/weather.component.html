@@ -1,0 +1,15 @@
+<div class="weather-container">
+  <input [(ngModel)]="city" placeholder="Enter city name" />
+  <button (click)="getWeather()">Get Weather</button>
+
+  <div *ngIf="loading" class="spinner">Loading...</div>
+
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="weatherData" class="weather-data">
+    <h2>{{ weatherData.location.name }}, {{ weatherData.location.country }}</h2>
+    <p>Temperature: {{ weatherData.current.temp_c }} °C</p>
+    <p>Condition: {{ weatherData.current.condition.text }}</p>
+    <img [src]="weatherData.current.condition.icon" alt="weather icon">
+  </div>
+</div>
